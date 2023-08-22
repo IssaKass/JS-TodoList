@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="title">
+        Tasks <span id="numberTasks" class="number-tasks">(0)</span>
+      </h1>
+      <input
+        type="text"
+        id="inputTask"
+        placeholder="New task"
+        minlength="1"
+        maxlength="50"
+      />
+      <div class="buttons">
+        <button id="btnAddTask" class="btn-add">
+          <i class="fa-solid fa-plus fa-fw"></i>
+          Add
+        </button>
+        <button id="btnClearCompletedTasks" class="btn-clear-completed">
+          <i class="fa-solid fa-check fa-fw"></i>
+          Clear Completed
+        </button>
+        <button id="btnClearAllTasks" class="btn-clear-all">
+          <i class="fa-solid fa-trash-can fa-fw"></i>
+          Clear All
+        </button>
+      </div>
+      <ul class="task-list" id="taskList"></ul>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
